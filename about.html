@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfy</title>
+    <link rel="stylesheet" href="./style3.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" />
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li>
+          <a href="http://127.0.0.1:5500/">Home</a>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/products.html"> Products </a>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/about.html"> About </a>
+        </li>
+      </ul>
+      <h1 class="h1">comfy</h1>
+      <i
+        class="fa-solid fa-cart-shopping"
+        style="color: #222; font-size: 30px; cursor: pointer"
+      ></i>
+      <div class="cnt">0</div>
+    </div>
+
+    <div class="section1">
+      <h1><a href="http://127.0.0.1:5500/">Home</a>/ About</h1>
+    </div>
+
+    <div class="section2">
+      <h1 class="text1"><span class="text2">/</span> Our history</h1>
+      <div class="text3">
+        <p class="p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+          accusantium sapiente tempora sed dolore esse deserunt eaque excepturi,
+          delectus error accusamus vel eligendi, omnis beatae. Quisquam, dicta.
+          Eos quod quisquam esse recusandae vitae neque dolore, obcaecati
+          incidunt sesequi blanditiis est exercitationem molestiae delectus
+          saepe odio eligendi modi porro eaque in libero minus unde sapiente
+          consectetur architecto. Ullam rerum, nemo iste ex, eaque perspiciatis
+          nisi, eum totam velit saepe sed quos similique amet. Ex, voluptate
+          accusamus nesciunt totam vitae esse iste.
+        </p>
+      </div>
+    </div>
+
+    <dialog class="cart">
+      <button class="cart-close">
+        <i class="fa-solid fa-x" style="color: #235275"></i>
+      </button>
+      <div class="section4">
+        <div class="header">
+          <h3 class="text-slanted">Your Bag</h3>
+        </div>
+        <div class="cart-items"></div>
+      </div>
+      <div class="footer">
+        <div class="total">
+          <h3 class="cart-total">Total:</h3>
+          <h3 class="sum">$0.00</h3>
+        </div>
+        <button class="cart-checkout btn">CHECKOUT</button>
+      </div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="js4/main.js"></script>
+  </body>
+</html>

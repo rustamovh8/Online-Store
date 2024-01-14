@@ -1,0 +1,743 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm&family=Yellowtail&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  padding-top: 1%;
+}
+.headerImg {
+  background-image: url(img/Rectangle\ 37.png);
+  background-repeat: no-repeat;
+  height: 140vh;
+  background-position: center;
+}
+.header ul {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+.header a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  cursor: pointer;
+}
+.header li {
+  list-style: none;
+}
+.rest {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  top: 250px;
+  left: 100px;
+}
+.btnShow {
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.btnShow a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  cursor: pointer;
+}
+.text1 {
+  color: #222;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.text2 {
+  color: #ba5d2c;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+}
+.section {
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  height: 75vh;
+  margin-top: 50px;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.box img {
+  width: 375px;
+  height: 200px;
+}
+.namePrice h1 {
+  color: rgba(0, 0, 0, 0.38);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+}
+.namePrice p {
+  color: #222;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+}
+.namePrice {
+  display: flex;
+  padding: 0px 25px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.all {
+  margin-top: 35px;
+  width: 220px;
+  padding: 14px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #ba5d2c;
+  border: 0;
+}
+.all a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+}
+.cnt {
+  background-color: #ba5d2c;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 91.5%;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-align: center;
+}
+.info {
+  display: none;
+}
+
+.container:hover {
+  .info {
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-right: 65px;
+    margin-top: 70px;
+    cursor: pointer;
+  }
+}
+.info2 {
+  display: none;
+}
+.container:hover {
+  .info2 {
+    display: flex;
+    position: absolute;
+    width: 75px;
+    height: 45px;
+    margin-left: 65px;
+    margin-top: 70px;
+    cursor: pointer;
+  }
+}
+.cart-close {
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-grey-5);
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background-color: #eaf3f2;
+}
+.text-slanted {
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 90px;
+  font-family: Charm;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+.section4 {
+  margin-top: 40px;
+  height: 80%;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  left: 67%;
+  background: #f5f5f5;
+  width: 400px;
+  height: 84vh;
+  transition: 0.3s;
+  padding: 20px 28px 80px 28px;
+}
+
+.btn {
+  background: #ba5d2c;
+  border-radius: var(--radius);
+  padding: 0.375rem 0.75rem;
+  border-color: transparent;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  cursor: pointer;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+}
+.cart-checkout {
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.cartItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  margin-top: 10px;
+}
+.namePrices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+}
+.divCnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.img {
+  width: 128px;
+  height: 90px;
+  border-radius: 4px;
+}
+.namePrices h1 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+.namePrices p {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
+.plus {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ba5d2c;
+  color: #ba5d2c;
+  font-size: 20px;
+  font-weight: 750;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+.minus {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ba5d2c;
+  color: #ba5d2c;
+  font-size: 20px;
+  font-weight: 750;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+.cart-items {
+  margin-top: 20px;
+}
+.h11 {
+  color: #fff;
+  font-family: Charm;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.h3 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.delet {
+  width: 24px;
+  height: 24px;
+  font-weight: 200px;
+  color: #323232;
+  margin-top: -10px;
+}
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.h1 {
+  color: #fff;
+  font-family: Charm;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.cart-total {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Charm;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+.sum {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Charm;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 450px;
+    margin: auto;
+  }
+  .headerImg {
+    background-image: url(img/Rectangle\ 37.png);
+    background-repeat: no-repeat;
+    height: 140vh;
+    background-position: center;
+  }
+  .h1 {
+    color: #fff;
+    font-family: Charm;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+  }
+  .header ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .header a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    cursor: pointer;
+  }
+  .header li {
+    list-style: none;
+  }
+  .rest {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    position: relative;
+    top: 250px;
+    left: 80px;
+  }
+  .h11 {
+    color: #fff;
+    font-family: Charm;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .h3 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .btnShow {
+    display: flex;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    background-color: transparent;
+  }
+  .btnShow a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    cursor: pointer;
+  }
+  .text1 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  .text2 {
+    color: #ba5d2c;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 48px */
+  }
+  .section {
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    height: 65vh;
+    margin-top: 50px;
+  }
+  .box {
+    display: block;
+  }
+  .box img {
+    width: 375px;
+    height: 200px;
+  }
+  .namePrice h1 {
+    color: rgba(0, 0, 0, 0.38);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+  }
+  .namePrice p {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+  }
+  .namePrice {
+    display: flex;
+    padding: 0px 25px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .all {
+    margin-top: 35px;
+    width: 220px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #ba5d2c;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 19px;
+    border: 0;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+  }
+  .cnt {
+    background-color: #ba5d2c;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 92%;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    text-align: center;
+  }
+  .info {
+    display: none;
+  }
+
+  .container:hover {
+    .info {
+      display: flex;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      margin-right: 65px;
+      margin-top: 70px;
+      cursor: pointer;
+    }
+  }
+  .info2 {
+    display: none;
+  }
+  .container:hover {
+    .info2 {
+      display: flex;
+      position: absolute;
+      width: 75px;
+      height: 45px;
+      margin-left: 65px;
+      margin-top: 70px;
+      cursor: pointer;
+    }
+  }
+  .cart-close {
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-grey-5);
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    background-color: #eaf3f2;
+  }
+  .text-slanted {
+    color: rgba(0, 0, 0, 0.87);
+    margin-left: 90px;
+    font-family: Charm;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+  }
+  .section4 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch; */
+    margin-top: 40px;
+    height: 80%;
+  }
+  .cart {
+    position: fixed;
+    top: 0;
+    left: 35%;
+    background: #f5f5f5;
+    width: 300px;
+    height: 89vh;
+    transition: 0.3s;
+    padding: 15px 10px 50px 10px;
+  }
+
+  .btn {
+    background: #ba5d2c;
+    border-radius: var(--radius);
+    padding: 0.375rem 0.75rem;
+    border-color: transparent;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    cursor: pointer;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+  }
+  .cart-checkout {
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .cartItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    align-self: stretch;
+  }
+  .namePrices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .divCnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .img {
+    width: 118px;
+    height: 80px;
+    border-radius: 4px;
+  }
+  .namePrices h1 {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+  }
+  .namePrices p {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+  }
+  .plus {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ba5d2c;
+    color: #ba5d2c;
+    font-size: 20px;
+    font-weight: 750;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .minus {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ba5d2c;
+    color: #ba5d2c;
+    font-size: 20px;
+    font-weight: 750;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .cart-items {
+    margin-top: 20px;
+  }
+  .delet {
+    width: 20px;
+    height: 20px;
+    font-weight: 200px;
+    color: #323232;
+    margin-top: -10px;
+  }
+  .total {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .cart-total {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Charm;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+  }
+  .sum {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Charm;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+  }
+}

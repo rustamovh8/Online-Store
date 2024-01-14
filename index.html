@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfy</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" />
+  </head>
+  <body>
+    <div class="headerImg">
+      <div class="header">
+        <ul>
+          <li>
+            <a href="http://127.0.0.1:5500/">Home</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/products.html"> Products </a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/about.html"> About </a>
+          </li>
+        </ul>
+        <h1 class="h1">comfy</h1>
+        <i
+          id="cartShop"
+          class="fa-solid fa-cart-shopping"
+          style="color: #ffffff; font-size: 30px; cursor: pointer"
+        ></i>
+        <div class="cnt">0</div>
+      </div>
+
+      <div class="rest">
+        <div class="text">
+          <h1 class="h11">Rest, Relax, Unwind</h1>
+          <h3 class="h3">Embrace your choices - we do</h3>
+        </div>
+        <button class="btnShow">
+          <a href="http://127.0.0.1:5500/products.html">SHOW NOW</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1 class="text1"><span class="text2">/</span>Featured</h1>
+      <div class="box"></div>
+      <button class="all"><a href="http://127.0.0.1:5500/products.html">ALL PRODUCTS</a></button>
+    </div>
+
+    <dialog class="cart">
+      <button class="cart-close">
+        <i class="fa-solid fa-x" style="color: #235275"></i>
+      </button>
+      <div class="section4">
+        <div class="header">
+          <h3 class="text-slanted">Your Bag</h3>
+        </div>
+        <div class="cart-items"></div>
+      </div>
+      <div class="footer">
+        <div class="total">
+          <h3 class="cart-total">Total:</h3>
+          <h3 class="sum">$0.00</h3>
+        </div>
+        <button class="cart-checkout btn">CHECKOUT</button>
+      </div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm&family=Yellowtail&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  padding-top: 1%;
+}
+.header ul {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+.header a {
+  text-decoration: none;
+  color: #222;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+}
+.header li {
+  list-style: none;
+}
+.cnt {
+  background-color: #ba5d2c;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 91.5%;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-align: center;
+}
+.section1 {
+  display: flex;
+  padding: 107px 120px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background: #f1f5f8;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.section1 h1 {
+  color: #235275;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 30px */
+  display: flex;
+}
+.section1 a {
+  color: #235275;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 30px */
+  text-decoration: none;
+}
+.color {
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+}
+.section2 {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.boxImg img {
+  width: 612px;
+  height: 433px;
+  border-radius: 7px;
+}
+.boxInfo {
+  display: flex;
+  width: 480px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+.divPricecolor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.divPricecolor h1 {
+  color: #235275;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.divProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.divProduct h1 {
+  color: rgba(34, 34, 34, 0.84);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+}
+.divProduct h2 {
+  color: rgba(35, 82, 117, 0.5);
+  font-family: Charm;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 36px */
+}
+.desc {
+  color: #235275;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+  width: 443px;
+}
+.btnAdd {
+  cursor: pointer;
+  display: flex;
+  width: 220px;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #ba5d2c;
+  border: 0;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+}
+.cart-close {
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-grey-5);
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background-color: #eaf3f2;
+}
+.text-slanted {
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 90px;
+  font-family: Charm;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+.section4 {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch; */
+  margin-top: 40px;
+  height: 80%;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  left: 67%;
+  background: #f5f5f5;
+  width: 400px;
+  height: 84vh;
+  transition: 0.3s;
+  padding: 20px 28px 80px 28px;
+}
+
+.btn {
+  background: #ba5d2c;
+  border-radius: var(--radius);
+  padding: 0.375rem 0.75rem;
+  border-color: transparent;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  cursor: pointer;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+}
+.cart-checkout {
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.cartItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.namePrices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+}
+.divCnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.img {
+  width: 128px;
+  height: 90px;
+  border-radius: 4px;
+}
+.namePrices h1 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+.namePrices p {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
+.plus {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ba5d2c;
+  color: #ba5d2c;
+  font-size: 20px;
+  font-weight: 750;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+.minus {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ba5d2c;
+  color: #ba5d2c;
+  font-size: 20px;
+  font-weight: 750;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+.cart-items {
+  margin-top: 20px;
+}
+.delet {
+  width: 24px;
+  height: 24px;
+  font-weight: 200px;
+  color: #323232;
+  margin-top: -10px;
+}
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.cart-total {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Charm;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+.sum {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Charm;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
